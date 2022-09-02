@@ -9,7 +9,7 @@
 * On + button click event it opens a modal and displays publisher details.
 
 ## Packages Used
-* axios for making HTTP requests from the browser and handle the transformation of request and response data.
+* Axios for making HTTP requests from the browser and handle the transformation of request and response data.
 * Material UI for icons and avatars.
 * React Modal for modal dialog component.
 
