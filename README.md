@@ -2,7 +2,7 @@
 
 * This project fetches data from mock-api for list of fake news details.
 * In data a Fact and Summary about the News is mentioned along with Date and Time.
-* Display them in cards format.
+* Displays them in cards format.
 
 ## View Publisher Details
 * There is a + icon button at bottom-right of each news card.
