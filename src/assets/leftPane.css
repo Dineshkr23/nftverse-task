@@ -59,4 +59,24 @@
 .appAbout_div>a,
 .copyright_div {
     font-size: small;
+    text-decoration: none;
+    color: black;
+}
+
+.iconsHover:hover {
+    cursor: pointer;
+}
+
+.icons_div {
+    color: rgb(25, 119, 242);
+}
+
+@media (max-width:1137px) {
+    .appName_div {
+        display: block;
+    }
+
+    .commonIconName {
+        display: block;
+    }
 }

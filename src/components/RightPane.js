@@ -25,13 +25,12 @@ export const RightPane = () => {
     axios(dataURL)
       .then((res) => {
         setData(res.data.content);
-        console.log(res.data.content);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, []);
-  
+  });
+
   return (
     <div className="rightPane">
       <div className="header_div">
@@ -43,14 +42,14 @@ export const RightPane = () => {
           data.map((value, index) => {
             return (
               <div className="content_cards" key={index}>
-                <p>{value.date}</p>
+                <h4>{value.date}</h4>
                 <p>{value.title}</p>
-                <img src={value.coverImageUrl} />
+                <img src={value.coverImageUrl} alt="cover img" />
                 <p>{value.summary.replace(/<\/?p[^>]*>/g, "")}</p>
                 <button
                   onClick={openModalHadler}
                   className="modalBtn"
-                  title="Click to see uploader details"
+                  title="Click to see publisher details"
                 >
                   +
                 </button>
@@ -68,9 +67,14 @@ export const RightPane = () => {
                     >
                       x
                     </button>
+                    <h3 className="modalHeading">Publisher</h3>
                     <div className="userDetails">
                       <div className="modalImgDiv">
-                        <img className="modalImg" src={value.user.profilePic} />
+                        <img
+                          className="modalImg"
+                          src={value.user.profilePic}
+                          alt="profile pic"
+                        />
                       </div>
                       <div className="userBio">
                         <p>Name: {value.user.fname + " " + value.user.lname}</p>
@@ -85,7 +89,7 @@ export const RightPane = () => {
           })
         ) : (
           <div>
-            <h1>error: data not found</h1>
+            <h1>Error: 503 Service Unavailable</h1>
           </div>
         )}
       </div>

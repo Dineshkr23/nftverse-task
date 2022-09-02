@@ -12,46 +12,46 @@ export const LeftPane = () => {
     <div className="leftPane">
       <div className="appName_div">
         <div className="commonIconName">
-          <span>
+          <span className="iconsHover">
             <AccountCircleIcon />
           </span>
-          <p>App Name</p>
+          <p className="iconsHover">App Name</p>
         </div>
-        <span>
+        <span className="iconsHover">
           <MenuIcon />
         </span>
       </div>
       <div className="appDetails_div">
         <div className="profile_div">
           <div className="commonIconName">
-            <span>
+            <span className="iconsHover">
               <AccountCircleIcon />
             </span>
-            <h4>Profile</h4>
+            <h4 className="iconsHover">Profile</h4>
           </div>
         </div>
         <div className="discover_div">
           <div className="commonIconName">
-            <span>
+            <span className="iconsHover">
               <GridViewIcon />
             </span>
-            <p>Discover</p>
+            <p className="iconsHover">Discover</p>
           </div>
         </div>
       </div>
       <div className="appAbout_div">
-        <p>About App</p>
-        <a>Send feedback</a>
-        <a>Terms of use</a>
-        <a>Privacy Policy</a>
+        <p className="iconsHover">About App</p>
+        <a href="">Send feedback</a>
+        <a href="">Terms of use</a>
+        <a href="">Privacy Policy</a>
         <div className="icons_div">
-          <span>
+          <span className="iconsHover">
             <LinkedInIcon />
           </span>
-          <span>
+          <span className="iconsHover">
             <FacebookIcon />
           </span>
-          <span>
+          <span className="iconsHover">
             <TwitterIcon />
           </span>
         </div>
