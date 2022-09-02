@@ -1,0 +1,132 @@
+.rightPane {
+    background-color: rgb(239, 237, 237);
+    height: 100vh;
+    width: 82vw;
+}
+
+.header_div {
+    padding: 0.1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_text {
+    color: rgb(77, 76, 76);
+}
+
+.header_btn {
+    border: none;
+    background-color: rgb(23, 126, 252);
+    border-radius: 2rem;
+    padding: 0rem 1.5rem;
+    height: 2rem;
+    color: #ffffff;
+    font-size: x-large;
+}
+
+.header_btn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 114, 254);
+}
+
+.content_div {
+    padding: 0rem 2rem;
+    background-color: rgb(239, 237, 237);
+    max-height: 94vh;
+    overflow-y: auto;
+    direction: ltr;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.5rem 1.5rem;
+}
+
+.content_cards {
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.content_cards>img {
+    width: 25rem;
+    height: 15rem;
+}
+
+.content_div::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.modalBtn {
+    position: absolute;
+    bottom: -1.2rem;
+    right: -1.2rem;
+    border: none;
+    border-radius: 100%;
+    background-color: rgb(239, 237, 237);
+    color: rgb(77, 76, 76);
+    padding: 0.6rem 01rem;
+    font-size: x-large;
+}
+
+.modalBtn:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.modalBtnOpen {
+    color: red;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    border: none;
+    border-radius: 100%;
+    background-color: rgb(239, 237, 237);
+    padding: 0.3rem 0.6rem;
+    font-size: large;
+}
+
+.modalBtnOpen:hover {
+    cursor: pointer;
+    color: rgb(246, 105, 105)
+}
+
+.modalImgDiv {
+    margin: 5rem;
+}
+
+.modalImg {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0.5rem;
+}
+
+.userDetails {
+    display: flex;
+    align-items: center;
+}
+
+.userBio {
+    margin-left: -2rem;
+}
+
+.modal {
+    position: absolute;
+    top: 10rem;
+    left: 42rem;
+    width: 40rem;
+    height: 20rem;
+    background-color: #ffffff2b;
+    border-radius: 0.5rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #9b9b9b16;
+}
